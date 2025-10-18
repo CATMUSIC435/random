@@ -3,21 +3,14 @@
 
 @font-face {
   font-family: "SVN Larken";
-  src: url("fonts/SVN-LARKEN-BOLD.OTF") format("opentype");
+  src: url("/fonts/SVN-Gilroy SemiBold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: "SVN Larken Regular";
-  src: url("fonts/SVN-Gilroy Regular.otf") format("opentype");
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
-  font-family: "SVN Larken Regular", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "SVN Larken", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 :root {
@@ -32,9 +25,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* .cinzel {
+.cinzel {
   font-family: "SVN Larken", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-} */
+}
 
 .liquid-glass-card {
   position: relative;
