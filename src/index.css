@@ -12,6 +12,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* .cinzel {
+  font-family: "SVN Larken", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+} */
+
 .liquid-glass-card {
   position: relative;
   isolation: isolate;

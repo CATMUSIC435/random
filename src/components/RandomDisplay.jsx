@@ -9,7 +9,7 @@ export default function RandomDisplay({
       {displayNumber && (
         <div
           ref={numberRef}
-          className="text-9xl font-extrabold text-orange-500 transition-all duration-200 ease-in-out"
+          className="text-[156px] font-extrabold text-white transition-all duration-200 ease-in-out"
         >
           {displayNumber}
         </div>
