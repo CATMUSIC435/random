@@ -45,23 +45,26 @@ export default defineConfig({
       },
     }),
   ],
-   build: {
-    target: "esnext",
-    cssCodeSplit: true,
-    sourcemap: false,
-    minify: "esbuild",
-    chunkSizeWarningLimit: 1000,
+  //  build: {
+  //   target: "esnext",
+  //   cssCodeSplit: true,
+  //   sourcemap: false,
+  //   minify: "esbuild",
+  //   chunkSizeWarningLimit: 1000,
 
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes("node_modules")) {
-            return "vendor";
-          }
-        },
-      },
-    },
-  },
+  //   rollupOptions: {
+  //     output: {
+  //       manualChunks(id) {
+  //         if (id.includes("node_modules")) {
+  //           return "vendor";
+  //         }
+  //       },
+  //     },
+  //   },
+  // },
+  // esbuild: {
+  //   drop: ["console", "debugger"],
+  // },
   // server: {
   //   allowedHosts: [
   //     'localhost',
