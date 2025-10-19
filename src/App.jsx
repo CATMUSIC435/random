@@ -79,7 +79,7 @@ export default function App() {
       gsap.killTweensOf(borderRef.current);
       gsap.to(borderRef.current, { borderWidth: 0, duration: 0.5 });
       setTimeout(() => triggerCelebration(numberRef, sectionRef), 300);
-    }, 5000);
+    }, 4000);
   };
 
   return (
