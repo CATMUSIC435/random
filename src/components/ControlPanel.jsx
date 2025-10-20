@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function ControlPanel({ maxNumber, setMaxNumber }) {
@@ -8,16 +8,12 @@ export default function ControlPanel({ maxNumber, setMaxNumber }) {
     return (
         <div className="fixed top-1/2 right-4 transform -translate-y-1/2 z-50">
             <div className="relative">
-                <button
-                    onMouseEnter={() => setIsCollapsed(!isCollapsed)}
+                {!isCollapsed ? <button
+                    onClick={() => setIsCollapsed(!isCollapsed)}
                     className="cursor-pointer rounded-l-md absolute -left-8 top-1/2 -translate-y-1/2 bg-white/10 backdrop-blur-md p-2 shadow-md hover:scale-105 transition"
                 >
-                    {isCollapsed ? (
-                        <ChevronLeft size={24} className="text-white" />
-                    ) : (
-                        <ChevronRight size={24} className="text-white" />
-                    )}
-                </button>
+                    <ChevronRight size={24} className="text-white" />
+                </button> : null}
 
                 <AnimatePresence>
                     {!isCollapsed && (
@@ -30,8 +26,8 @@ export default function ControlPanel({ maxNumber, setMaxNumber }) {
                             className="liquid-glass-card rounded-2xl max-w-sm w-full overflow-hidden"
                         >
                             <div className="flex flex-col gap-4 px-6 py-8">
-                                <h1 className="text-3xl font-bold text-white">
-                                    🎲 Quay Số May Mắn
+                                <h1 className="text-3xl font-bold text-white text-center">
+                                    🎲🎲🎲🎲
                                 </h1>
                                 <input
                                     type="number"
