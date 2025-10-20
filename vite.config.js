@@ -14,7 +14,7 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg', 'atsaigonriverside-all.png', 'fonts/SVN-Gilroy SemiBold.otf', 'sounds/spin.mp3', 'sounds/win.mp3'],
       manifest: {
         name: 'DXMD VietNam',
         short_name: 'DXMD VietNam',
